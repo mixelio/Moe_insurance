@@ -894,6 +894,8 @@ h1 {
   }
 }
 
+/* форма обратной связи*/
+
 .feedback {
   background-color: #e5e5e5;
   padding: 0 0 100px;
@@ -903,10 +905,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .feedback__img {
-  width: 40%;
+  width: 35%;
 }
 
 .feeedback__form {
@@ -914,36 +917,51 @@ h1 {
 }
 
 .feedback__item {
-  //width: 48%;
   p {
     font-size: 16px;
     line-height: 20px;
     color: #333333;
+    margin: 0 9px 15px;
+    //padding: 5px;
   }
   img {
     width: 100%;
   }
 }
-.input_container {
-  display: flex;
-  justify-content: space-between;
-}
 
 .contacts__form {
-  input {
-    display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    width: 47%;
-    //margin: 6px;
+  input {
+    margin: 5px;
+    width: 48%;
+    padding: 0 20px;
+    display: block;
     border: 1px solid #eeeeee;
     background-color: #fff;
-    // width: 290px;
     height: 40px;
+    box-sizing: border-box;
   }
   textarea {
-    width: 100%;
+    margin: 5px 5px 40px;
+    padding: 12px 20px;
+    width: 97.5%;
     height: 120px;
-    margin: 6px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    resize: none;
+  }
+  .input_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button__container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 9px;
   }
 }
 
@@ -979,6 +997,24 @@ h1 {
   .about__button_container {
     display: flex;
     justify-content: center;
+  }
+  .feedback__row {
+    flex-direction: column;
+  }
+  .contacts__firstjrscreen {
+    padding: 140px 0 75px;
+  }
+
+  .feedback__img {
+    width: 50%;
+    margin: 0 0 40px;
+  }
+
+  .feeedback__form {
+    width: 100%;
+    textarea {
+      width: 97%;
+    }
   }
 }
 
@@ -1158,11 +1194,22 @@ h1 {
   .firstjrscreen__item:first-child {
     padding: 0;
   }
+  .contacts__form input {
+    width: 47%;
+  }
+  .feeedback__form {
+    textarea {
+      width: 96%;
+    }
+  }
 }
 
 @media (max-width: 390px) {
   .firstjrscreen__item {
     text-align: center;
     margin: 0 0 10px;
+  }
+  .contacts__form input {
+    width: 46%;
   }
 }

@@ -942,6 +942,7 @@ h1 {
   margin: 0;
 }
 
+/* форма обратной связи*/
 .feedback {
   background-color: #e5e5e5;
   padding: 0 0 100px;
@@ -951,10 +952,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .feedback__img {
-  width: 40%;
+  width: 35%;
 }
 
 .feeedback__form {
@@ -965,27 +967,45 @@ h1 {
   font-size: 16px;
   line-height: 20px;
   color: #333333;
+  margin: 0 9px 15px;
 }
 .feedback__item img {
   width: 100%;
 }
 
-.input_container {
+.contacts__form {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .contacts__form input {
+  margin: 5px;
+  width: 48%;
+  padding: 0 20px;
   display: block;
-  width: 47%;
   border: 1px solid #eeeeee;
   background-color: #fff;
   height: 40px;
+  box-sizing: border-box;
 }
 .contacts__form textarea {
-  width: 100%;
+  margin: 5px 5px 40px;
+  padding: 12px 20px;
+  width: 97.5%;
   height: 120px;
-  margin: 6px;
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  resize: none;
+}
+.contacts__form .input_container {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__form .button__container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 9px;
 }
 
 @media (max-width: 1000px) {
@@ -1022,6 +1042,26 @@ h1 {
   .about__button_container {
     display: flex;
     justify-content: center;
+  }
+
+  .feedback__row {
+    flex-direction: column;
+  }
+
+  .contacts__firstjrscreen {
+    padding: 140px 0 75px;
+  }
+
+  .feedback__img {
+    width: 50%;
+    margin: 0 0 40px;
+  }
+
+  .feeedback__form {
+    width: 100%;
+  }
+  .feeedback__form textarea {
+    width: 97%;
   }
 }
 @media (max-width: 800px) {
@@ -1220,10 +1260,22 @@ h1 {
   .firstjrscreen__item:first-child {
     padding: 0;
   }
+
+  .contacts__form input {
+    width: 47%;
+  }
+
+  .feeedback__form textarea {
+    width: 96%;
+  }
 }
 @media (max-width: 390px) {
   .firstjrscreen__item {
     text-align: center;
     margin: 0 0 10px;
+  }
+
+  .contacts__form input {
+    width: 46%;
   }
 }
