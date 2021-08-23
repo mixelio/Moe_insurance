@@ -815,29 +815,17 @@ h1 {
   }
 }
 
-.container {
-}
-
 .footer__row {
   display: flex;
   justify-content: space-between;
-}
-
-.footer__blok {
 }
 
 .footer__blok_1 {
   width: 50%;
 }
 
-.footer__item {
-}
-
 .footer__item_1 {
   padding-bottom: 150px;
-}
-
-.footer__logo {
 }
 
 .footer__item_2 {
@@ -861,12 +849,6 @@ h1 {
 
 .footer__twitter {
   background: url("../img/twitter-2.svg") 0 0 / contain no-repeat;
-}
-
-.footer__item_3 {
-}
-
-.footer__blok_2 {
 }
 
 .footer__nav {
@@ -905,7 +887,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
 }
 
 .feedback__img {
