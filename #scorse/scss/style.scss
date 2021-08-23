@@ -162,7 +162,7 @@ body {
 /* главное изображение страницы */
 
 .firstjrscreen {
-  background: url("../img/main.jpg") 0 0 / cover no-repeat;
+  background: url("../img/main.webp") 50% 50% / cover no-repeat;
   transform: translateY(-110px);
   position: relative;
   z-index: 0;
@@ -188,7 +188,7 @@ body {
 }
 .contacts__firstjrscreen {
   position: relative;
-  background: url("../img/main-contacts.jpg") 50% 100% / cover no-repeat;
+  background: url("../img/main-contacts.webp") 50% 100% / cover no-repeat;
   transform: translateY(-110px);
   z-index: 0;
   padding: 220px 0 150px;
@@ -362,6 +362,9 @@ h1 {
 
 .about__item {
   flex: 0 1 47%;
+  img {
+    width: 100%;
+  }
 }
 
 .about__title {
