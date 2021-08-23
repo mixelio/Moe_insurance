@@ -294,10 +294,10 @@ body._lock {
 
 .contacts__firstjrscreen {
   position: relative;
-  background: url("../img/main-contacts.jpg") 0 0/cover no-repeat;
+  background: url("../img/main-contacts.jpg") 50% 100%/cover no-repeat;
   transform: translateY(-110px);
   z-index: 0;
-  padding: 200px 0 200px;
+  padding: 220px 0 150px;
   text-align: center;
 }
 .contacts__firstjrscreen span {
@@ -306,6 +306,7 @@ body._lock {
   line-height: 61px;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -1071,16 +1072,20 @@ h1 {
   }
 
   .contacts__firstjrscreen {
-    padding: 140px 0 75px;
+    padding: 165px 0 75px;
   }
 
   .feedback__img {
-    width: 50%;
+    width: 80%;
     margin: 0 0 40px;
+    transform: translateY(-10%);
   }
 
   .feeedback__form {
     width: 100%;
+  }
+  .feeedback__form p {
+    text-align: center;
   }
   .feeedback__form textarea {
     width: 97%;
@@ -1180,6 +1185,10 @@ h1 {
   .trasted__row .trasted__item:last-child {
     margin-bottom: 0;
   }
+
+  textarea {
+    width: 97.5%;
+  }
 }
 @media (max-width: 640px) {
   .futures__row {
@@ -1201,6 +1210,10 @@ h1 {
 
   .futures {
     padding: 40px 0 35px;
+  }
+
+  textarea {
+    width: 97.5%;
   }
 }
 @media (max-width: 500px) {
@@ -1323,14 +1336,14 @@ h1 {
   .feeedback__form textarea {
     width: 96%;
   }
+
+  .contacts__form input {
+    width: 96%;
+  }
 }
 @media (max-width: 390px) {
   .firstjrscreen__item {
     text-align: center;
     margin: 0 0 10px;
-  }
-
-  .contacts__form input {
-    width: 46%;
   }
 }
